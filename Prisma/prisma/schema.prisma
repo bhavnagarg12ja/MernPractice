@@ -19,6 +19,7 @@ model User {
   firstName String?        //? means optional
   lastName String?
   password String
+  todos Todo[] //one to mayny relationships
 }
 
 model Todo {
@@ -27,4 +28,5 @@ model Todo {
   done Boolean @default(false)
   description String?
   userId Int
+  user User @relation(fields: [userId], references: [id])
 }

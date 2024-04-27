@@ -55,3 +55,16 @@ async function getUser(username: string) {
 }
 
 getUser("bhavnagarg@gmail.com");
+
+// async function createTodoForUser(userId: number, title: string, description: string) {
+//     const todo = await prisma.todo.create({
+//       data: {
+//         title,
+//         description,
+//         user: {
+//           connect: { id: userId },
+//         },
+//       },
+//     });
+//     return todo;
+//   }
