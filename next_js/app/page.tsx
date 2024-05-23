@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <div>
-      hi there
+      hi there from page
     </div>
   );
 }
